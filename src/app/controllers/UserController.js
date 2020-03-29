@@ -22,7 +22,9 @@ class UserController {
   }
 
   async update(req, res) {
-    return res.json();
+    console.log(req.userId);
+
+    return res.json({ ok: 'teste' });
   }
 
   async delete(req, res) {
